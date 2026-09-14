@@ -33,6 +33,10 @@ body {
     overflow-x: hidden;
 }
 
+*, *::before, *::after {
+    min-width: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -764,9 +768,11 @@ a {
     .timeline     { padding-left: 28px; }
     .timeline-dot { left: -36px; }
     .timeline-header { flex-direction: column; align-items: flex-start; }
-    .contact-card { min-width: unset; width: 100%; }
     .hero-cta { flex-direction: column; align-items: center; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .stat-number, .stat-suffix { font-size: 2rem; }
+    .stats-strip { padding: 36px 20px; }
+    .stat-label { font-size: 0.72rem; }
 }
 
 /* ===========================
